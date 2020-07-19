@@ -17,13 +17,41 @@
  
  
 
+
+
+
+
+
+<div id="splash-screen" class=" h-full w-full bg-white fixed z-50">
+        <svg id="logo" class="absolute mx-auto" style="top:40%; left:50%; transform:translate(-50%,-50%); transform:scale(1.5)"  width="173" height="127" viewBox="0 0 173 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M138.52 110.79C169.439 130.348 73.1574 7.0541 59.1894 3.10216L32.0869 63C79.8237 76.6831 107.601 91.2315 138.52 110.79Z" fill="url(#paint0_radial)" stroke="#42474F" stroke-width="3"/>
+            <path d="M139.3 124.06C174.382 126.574 41.6164 64.9347 28 68.1193L3 124.06C49.616 113.332 104.218 121.546 139.3 124.06Z" fill="url(#paint1_linear)" stroke="#97786F" stroke-width="3"/>
+           
+            </svg>
+            
+    </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class=" sticky top-0 z-10 bg-gray-200 px-4 py-4">
       <div
         class="md:max-w-6xl md:mx-auto md:flex md:items-center md:justify-between"
       >
         <div class="flex justify-between items-center">
             <div class="flex items-center">
-                <img  class="h-12 w-12 xl:h-16 xl:w-16"src="img/logo.svg" alt="tricode Technology" />
+                <img  class="h-8 w-8 xl:h-12 xl:w-12"src="img/logo-outline.svg" alt="tricode Technology" />
           <a href="#" class="inline-block ml-2 py-2 text-gray-800 lg:text-xl font-Poppins font-semibold"
             > Tricode Technology</a
           >
@@ -95,7 +123,7 @@
 
                 <div
                   class="ml-32 absolute left-0 bottom-0  bg-gray-300 rounded-lg shadow-2xl px-3 "
-                  style="transform: rotate(-8deg); z-index: 2; margin-bottom: -220px;"
+                  style="transform: rotate(-8deg); z-index: 2; margin-bottom: -220px; animation: animateMobile 4s linear infinite "
                 >
                 <div class="h-2 rounded-lg mx-auto my-4 w-12 bg-gray-100"></div>
                   <div class="bg-white rounded-lg pt-4  ">
@@ -136,7 +164,7 @@
 
                 <div
                   class="mt-10 w-full absolute right-0 top-0 flex rounded-lg bg-white overflow-hidden shadow-lg"
-                  style="transform: rotate(-8deg); margin-right: -250px; z-index: 1;"
+                  style="transform: rotate(-8deg); margin-right: -250px; z-index: 1; animation: animateWeb 6s linear infinite ;"
                 >
                 <div
                 class="h-4 bg-gray-200 absolute top-0 left-0 right-0 rounded-t-lg flex items-center"
@@ -617,7 +645,7 @@ Through digital marketing and search engine optimizations, we make sure your pro
     </div>
     <div class=" mt-8 sm:flex sm:items-center sm:flex-row-reverse ">
     <img  class="mx-auto  w-full object-cover object-center mt-3 sm:w-1/2" src="img/about2.svg" alt="team" />
-    <p class="text-md text-gray-800  text-medium text-left mt-3 sm:w-1/2 ">
+    <p class="text-md text-gray-600  text-medium text-left mt-3 sm:w-1/2 ">
         
 
         &nbsp; &nbsp; &nbsp; &nbsp; Tricode is a Web Designing Company Born in Kathmandu that provides services related to Website designing, Website Redesigning, Responsive Website, Mobile application development ,digital marketing ans search engine optimization.<br><br>
@@ -683,6 +711,14 @@ tricodeofficial@gmail.com
 
 
 <script>
+    
+
+
+    window.onload=function(){
+        document.getElementById("splash-screen").style.display="none";
+    };
+
+
     menuVisible=false;
     mobile=false;
     new WOW().init(); 
@@ -735,9 +771,10 @@ tricodeofficial@gmail.com
 
     }
 
-new WOW.init();
- var scene = document.getElementById('scene');
- var parallax = new Parallax(scene);
+const splash=document.querySelectorAll("#logo path");
+console.log(splash);
+for (let i=0;i<splash.length; i++){
+   console.log(` letter ${i} is  ${splash[i].getTotalLength()} `);}
 
 
 </script>
