@@ -10,26 +10,125 @@
      <link rel="stylesheet" href="build/tailwind.css">
      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+
+
+<style>
+
+
+#logo{
+    animation:scale 1.5s infinite ease forwards 1.3s;
+}
+
+
+
+#splash-screen{
+  position: fixed;
+  top:0;
+  left: 0;
+  height:100vh;
+  width:100%;
+  background-color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  flex-direction: column;
+}
+
+
+#logo path:nth-child(1){
+stroke-dasharray: 337;
+    stroke-dashoffset: 337;
+    animation: line-anim 0.8s linear forwards,fill-black 0.2s ease-in forwards 1.0s;
+    
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 336;
+    stroke-dashoffset: 336;
+    animation: line-anim 0.8s linear forwards  , fill-brown 0.2s ease forwards 1.2s;
+ 
+
+   
+}
+
+@keyframes scale {
+    0% {
+        transform:scale(1.0);
+    }
+  
+
+    50%{transform:scale(1.1);}
+
+    100%{transform:scale(1.0);}
+}
+
+
+@keyframes line-anim{
+    to{ stroke-dashoffset: 0;}
+}
+
+@keyframes fill-brown{
+    from
+    {
+        fill:transparent;
+    }
+    to{
+        fill:#97786F;
+    }
+}
+@keyframes fill-black{
+    from{
+        fill:transparent;
+    }
+    to{
+        fill:#42474F;
+    }
+}
+
+#text{
+    position: relative;
+    opacity:0;
+    animation:text 2s ease forwards 1.2s;
+}
+
+@keyframes text{
+    from{
+        left:-40px;
+        opacity:0;
+    }
+    to {
+       left:0px;
+        opacity:1;
+    }
+}
+
+
+
+</style>
+
 </head>
 <body class=" font-Poppins">
     
+
+
+ </script>
  
- 
- 
 
 
 
 
 
 
-<div id="splash-screen" class=" h-full w-full bg-white fixed z-50">
-        <svg id="logo" class="absolute mx-auto" style="top:40%; left:50%; transform:translate(-50%,-50%); transform:scale(1.5)"  width="173" height="127" viewBox="0 0 173 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div id="splash-screen" >
+        <svg id="logo"  width="173" height="127" viewBox="0 0 173 127" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M138.52 110.79C169.439 130.348 73.1574 7.0541 59.1894 3.10216L32.0869 63C79.8237 76.6831 107.601 91.2315 138.52 110.79Z" fill="url(#paint0_radial)" stroke="#42474F" stroke-width="3"/>
             <path d="M139.3 124.06C174.382 126.574 41.6164 64.9347 28 68.1193L3 124.06C49.616 113.332 104.218 121.546 139.3 124.06Z" fill="url(#paint1_linear)" stroke="#97786F" stroke-width="3"/>
            
             </svg>
+
+            <h3 id="text" class=" mt-8 relative z-50  text-gray-500 font-semibold text-lg md:text-3xl">Tricode technology pvt.ltd</h3>
             
-    </div>
+</div>
         
 
 
@@ -51,7 +150,7 @@
       >
         <div class="flex justify-between items-center">
             <div class="flex items-center">
-                <img  class="h-8 w-8 xl:h-12 xl:w-12"src="img/logo-outline.svg" alt="tricode Technology" />
+                <img  class="h-12 w-12 xl:h-18 xl:w-18"src="img/logo.svg" alt="tricode Technology" />
           <a href="#" class="inline-block ml-2 py-2 text-gray-800 lg:text-xl font-Poppins font-semibold"
             > Tricode Technology</a
           >
@@ -770,11 +869,6 @@ tricodeofficial@gmail.com
         }
 
     }
-
-const splash=document.querySelectorAll("#logo path");
-console.log(splash);
-for (let i=0;i<splash.length; i++){
-   console.log(` letter ${i} is  ${splash[i].getTotalLength()} `);}
 
 
 </script>
