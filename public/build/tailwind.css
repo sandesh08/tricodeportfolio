@@ -648,9 +648,14 @@ video {
   position:absolute;
   bottom:6px;
   left:6px;
-  border-top:5px solid rgb(49, 130, 206);
-  border-right: 40px solid rgb(49, 130, 206);
-  border-radius: 40px;
+  border-top:2px solid rgb(49, 130, 206);
+  border-bottom:2px solid rgb(49, 130, 206);
+  border-left:20px solid rgb(49, 130, 206);
+  border-right: 20px solid rgb(49, 130, 206);
+  border-top-left-radius: 999px;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  border-bottom-left-radius: 999px;
 }
 
 @-webkit-keyframes animateMobile {

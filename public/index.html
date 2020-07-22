@@ -159,7 +159,7 @@ stroke-dasharray: 337;
 
     <div class=" sticky top-0 z-10 bg-gray-200 px-4 py-4">
       <div
-        class="md:max-w-6xl md:mx-auto md:flex md:items-center md:justify-between"
+        class="lg:max-w-6xl lg:mx-auto lg:flex lg:items-center lg:justify-between"
       >
         <div class="flex justify-between items-center">
             <div class="flex items-center">
@@ -169,14 +169,14 @@ stroke-dasharray: 337;
           >
           </div>
           <div
-            class="inline-block cursor-pointer md:hidden" onclick="toggleMenu()">
+            class="inline-block cursor-pointer lg:hidden" onclick="toggleMenu()">
             <div id="menu-1" class="transition duration-500 ease-out bg-gray-600  h-1 w-8 rounded-lg mb-2" style=""></div>
             <div id="menu-2" class="transition duration-500 ease-out bg-gray-600 rounded-full h-1 w-6 mb-2" "></div>
             <div id="menu-3"class="transition duration-500 ease-out bg-gray-600 rounded-full h-1 w-4" ></div>
           </div>
         </div>
         
-        <div id="menu"class=" hidden md:flex  md:items-center lg:text-lg font-semibold ">
+        <div id="menu"class=" hidden lg:flex  lg:items-center lg:text-lg font-semibold ">
             <a
             href="#"
             class="my-1 transition duration-100 ease-out active block py-2 px-4 text-gray-800  hover:bg-gray-800 rounded-lg"
@@ -210,7 +210,7 @@ stroke-dasharray: 337;
       <div class="px-4 py-20 md:py-4">
         <div class="md:max-w-6xl md:mx-auto">
           <div class="md:flex md:flex-wrap">
-            <div class="md:w-1/2 text-center md:text-left md:pt-16">
+            <div class="md:w-1/2 text-center md:text-left md:pl-8 lg:pl-0 md:pt-16 lg:pt-24">
               <h1
                 class="font-bold text-gray-800  font-Poppins text-2xl md:text-5xl leading-tight mb-4"
               >
@@ -608,10 +608,17 @@ stroke-dasharray: 337;
     </div>
 
 </div>
-
-    <div class=" mt-64 md:mt-2 w-full">
-        <h1 class=" font-semibold pt-16  font-Poppins text-lg md:text-3xl  text-gray-700 text-center">Bring <span class="text-orange-500">Happiness</span> to Your <br>Digital Products!"</h1>
+    
+    <div class="flex  flex-col items-end mt-48 md:mt-18 w-full">
+     
+      <div class="hidden md:block" style="width:75vw;" >
+        <div class="" style=" border-bottom: 50px solid #edf2f7; border-left: 75vw; border-left-color:transparent; border-left-style:solid;"></div>
+      <h1 class=" bg-gray-200 font-semibold  font-Poppins text-lg md:text-3xl  text-gray-700 text-center"> " Bring <span class="text-orange-500">Happiness</span> to Your <br>Digital Products!"</h1>
+      <div class="" style=" border-top: 50px solid #edf2f7; border-right: 75vw; border-right-color:transparent; border-right-style:solid;"></div>
+    </div>    
     </div>
+    <h1 class="md:hidden  font-semibold  font-Poppins text-lg  mt-4 pt-16 text-gray-700 text-center"> " Bring <span class="text-orange-500">Happiness</span> to Your <br>Digital Products!"</h1>
+
 
 
 
@@ -621,7 +628,7 @@ stroke-dasharray: 337;
     <div class="mx-auto  border-4 border-blue-600 w-16 rounded-full mb-8"></div>
     
     <div class="mx-auto">
-        <div class="bg-gray-200 rounded-2xl  mx-6 py-8 sm:flex md:justify-between sm:flex-row-reverse sm:items-center xl:max-w-screen-xl xl:mx-auto wow bounceInUp">
+        <div class="bg-gray-200 rounded-2xl  mx-6 py-8 sm:flex md:justify-between sm:bg-white sm:flex-row-reverse sm:items-center xl:max-w-screen-xl xl:mx-auto wow bounceInUp">
             <div class="sm:w-1/2">
             <img  class="h-32 w-32 mx-auto md:w-64 md:h-64 sm:w-48 sm:h-48"src="img/responsive.svg" alt="tricode Technology" />
             </div>
@@ -646,7 +653,7 @@ stroke-dasharray: 337;
         <h1 class="text-lg md:text-2xl font-medium pt-16 font-Poppins  text-gray-600 text-center">We Specialize in</h1>
         
  <div class="lg:hidden">
-    <div class=" bg-white rounded-lg my-8 mx-6   shadow-lg  relative  " data-wow-duration="2s" data-wow-delay="2s">
+    <div class=" bg-white  rounded-lg my-8 mx-6   shadow-lg  relative  " data-wow-duration="2s" data-wow-delay="2s">
           <div class="flex justify-between items-cente mx-4 items-center">
         <div class="flex   items-center  my-2">
         <img  class="h-12 w-12  mx-auto"src="img/android.svg" alt="tricode Technology" />
@@ -655,7 +662,7 @@ stroke-dasharray: 337;
         </div>
         <img  id="mobile-toggler" class="h-6 w-6 transform rotate-180  transition duration-500 ease-out flex-shrink-1"src="img/arrow-blue.svg" alt="arrow" onclick="toggleText('mobile-text','mobile-toggler')" />
           </div>
-        <p id="mobile-text"class=" hidden text-sm md:text-md text-gray-600  text-medium text-center px-6 py-4">
+        <p id="mobile-text"class=" hidden  text-sm md:text-md text-gray-600  text-medium text-center px-6 py-4">
             Tricode technology is the top of mobile development outsourcing in nepal, with rich experience in providing offshore software development services, we have developed a wide range of consumer and enterprise-oriented applications.
         </p>
     </div>
@@ -669,7 +676,7 @@ stroke-dasharray: 337;
         </div>
         <img  id="web-toggler" class="h-6 w-6 transform rotate-180  transition duration-500 ease-out flex-shrink-1"src="img/arrow-blue.svg" alt="arrow" onclick="toggleText('web-text','web-toggler')" />
           </div>
-        <p id="web-text"class=" hidden text-sm md:text-md text-gray-600  text-semibold text-center px-6 py-4">
+        <p id="web-text"class=" hidden transition duration-500 ease-out text-sm md:text-md text-gray-600  text-semibold text-center px-6 py-4">
             Along with website development services for different sectors, we offer high-end consulting services, including expert guidance and project management related to website design and web app development.
         </p>
     </div>
@@ -684,7 +691,7 @@ stroke-dasharray: 337;
         </div>
         <img  id="seo-toggler" class="h-6 w-6 transform rotate-180  transition duration-500 ease-out flex-shrink-1"src="img/arrow-blue.svg" alt="arrow-blue" onclick="toggleText('seo-text','seo-toggler')" />
           </div>
-        <p id="seo-text"class=" hidden text-sm md:text-md text-gray-600  text-semibold text-center px-6 py-4">
+        <p id="seo-text"class=" hidden transition duration-500 ease-out text-sm md:text-md text-gray-600  text-semibold text-center px-6 py-4">
             We not only build your products, but we also make sure that your products get the attention of your potential customers.
             Through digital marketing and search engine optimizations, we make sure your products get the attention of your potential customers
         </p>
@@ -776,40 +783,48 @@ Through digital marketing and search engine optimizations, we make sure your pro
 <section id="contact-us"class="bg-gray-100  py-16" >
     <h1 class="text-lg md:text-3xl font-semibold pt-16 font-Poppins  text-gray-700 text-center">Contact us</h1>
     <div class="mx-auto  border-4 border-blue-600 w-16 rounded-full"></div>
-    <div class="bg-white shadow-xl mx-6 my-8  py-8 px-6 rounded-2xl border xl:max-w-screen-xl xl:mx-auto">
+    <div class="bg-white shadow-xl mx-6 my-8  py-8 px-6 rounded-2xl  xl:max-w-screen-xl xl:mx-auto">
        <div class="sm:flex sm:items-center sm:justify-between ">
           <div class="sm:w-1/2 sm:px-8">
            <h1 class="text-lg md:text-3xl font-semibold mt-4 font-Poppins  text-gray-700 ">Got a Project?</h1>
            <h1 class="text-md md:text-xl font-semibold  font-Poppins  text-gray-700 ">Let's have a chat</h1>
            <Form >
-              
-           <div class="focus:outline-none  border-b-2 mt-4 border-gray-800">
-            <label class="text-xs font-medium text-gray-600"for="inputEmail">Email</label>
-            <input id="inputEmail"class="appearance-none bg-transparent border-none w-full text-gray-700 mr-1  px-2 leading-tight " type="text" placeholder="abc@dec.xyz" aria-label="Email">
-            </div>
-            <div class="focus:outline-none  border-b-2 mt-4 border-gray-800">
-                <label class="text-xs font-medium text-gray-600"for="inputEmail">short message</label>
-                <input id="inputEmail"class="appearance-none bg-transparent border-none w-full text-gray-700 mr-1  px-2 leading-tight " type="text" placeholder="message" aria-label="Email">
-                </div>
-                <button class=" block bg-blue-600 text-white text-md md:text-xl px-6 py-2 mt-8 rounded-full shadow-xl hover:bg-gray-200 font-semibold" type="submit" value="submit">Get in touch.</button>
-                </Form>
 
+            <div >
+              <label class="block  tracking-wide text-gray-600 text-sm font-medium mt-8" for="name">
+                Name
+              </label>
+              <input class="appearance-none block w-full bg-gray-200 mt-2 text-gray-700 border border-gray-200 rounded-full py-3 px-4 mb-1 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="Name">
+             
+            </div>
+              
+           <div class="mt-4">
+            <label class="text-sm font-medium text-gray-600"for="inputEmail">Email</label>
+            <input class="appearance-none block w-full bg-gray-200 mt-2 text-gray-700 border border-gray-200 rounded-full py-3 px-4 mb-1 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="Email">
+               
+          </div>
+            <div class="mt-4">
+                <label class="text-sm font-medium text-gray-600"for="inputEmail">short message</label>
+                <textarea class="appearance-none block w-full bg-gray-200 mt-2 text-gray-700 border border-gray-200 rounded-xl py-3 px-4 mb-1 leading-tight focus:outline-none resize-none focus:bg-white focus:border-gray-500" id="name" type="text"  rows="6" placeholder="message" ></textarea>
+  
+                <button class=" mt-6 mb-12 md:mb-0 md:mt-10 inline-block py-3 px-8 text-white bg-blue-600  rounded-full shadow-xl border-2 border-blue-600 hover:bg-white hover:text-gray-700" type="submit" value="submit">  Get in touch </button>
+                </Form>
+          </div>
 
                
     
            
        </div>
-           <div class="sm:w-1/2">
-            <h1 class="text-lg md:text-2xl font-semibold pt-16 sm:pt-1 font-Poppins  text-gray-500 text-center">Contact info</h1>
-            <div class="mx-auto  border-2 border-blue-200 w-48 rounded-full"></div>
-            <p class="block text-sm md:text-md text-gray-600 px-4 py-4 text-center ">
-                Sanepa height
-                <br>
-Sanepa, Lalitpur
-<br>
-+977-9845454545<br>
-tricodeofficial@gmail.com
-            </p>
+           <div class=" w-full sm:w-1/2 sm:flex sm:flex-col sm:justify-center sm:items-center">
+
+<img class="hidden sm:block object-cover mx-auto" style="max-height: 25rem;" src="img/4022196 1.png" />
+<div class=" sm:ml-4">
+<div class="flex justify-start items-center  mt-2"> <svg class="h-4 w-4 fill-current text-gray-600 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13zm0-11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg><span class="text-sm md:text-md text-gray-600">Sanepa, Lalitpur</span></div>
+<div class="flex justify-start items-center mt-2"> <svg class="h-4 w-4 fill-current text-gray-600 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M20 18.35V19a1 1 0 0 1-1 1h-2A17 17 0 0 1 0 3V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4c0 .56-.31 1.31-.7 1.7L3.16 8.84c1.52 3.6 4.4 6.48 8 8l2.12-2.12c.4-.4 1.15-.71 1.7-.71H19a1 1 0 0 1 .99 1v3.35z"/></svg><span class="text-sm md:text-md text-gray-600">+977-9845454545</span></div>
+           
+              <div class="flex justify-start items-center   mt-2"><svg class="h-4 w-4 fill-current text-gray-600 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/></svg> <span class="text-sm md:text-md text-gray-600">tricodeofficial@gmail.com</span></div>
+                
+              </div>
            </div> 
         </div>
 </section>
