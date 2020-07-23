@@ -1,20 +1,22 @@
 @tailwind base;
 @tailwind components;
 .border-right-div{
-    @apply border-t-32 border-gray-100;
+    @apply border-t-32 border-primary;
     border-right:98vw;
     border-right-color:transparent;
     border-right-style:solid;
 }
+
 .border-left-div{
-    @apply border-b-32 border-gray-100;
+    @apply border-b-32 border-primary;
     border-left:98vw;
     border-left-color:transparent;
     border-left-style:solid;
 }
 .active{
+    @apply text-textPrimary;
     position:relative;
-    color:rgb(39, 36, 36) !important;
+   
 
 }
 .active:after{
