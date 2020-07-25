@@ -2,16 +2,27 @@ module.exports = {
   purge: [],
   theme: {
     extend: {
+      zIndex: {
+        '0': 0,
+       '10': 10,
+      '20': 20,
+       '30': 30,
+    '40': 40,
+       '50': 50,
+       '0.1':'-10',
+       '0.2':'-20',
+
+    },
 
       colors:{
 
 
 
 
-      primary:'#1E52A2',
-      textPrimary:'#ffffff',
-      textPrimarySoft:'#DFE2E6',
-      secondary:'#FA5B01',
+      primary:'#88BDBC',
+      textPrimary:'#47434f',
+      textPrimarySoft:'#6f6f6f',
+      secondary:'#3182ce',
 
 
         transparent: 'transparent',
@@ -162,17 +173,7 @@ module.exports = {
 
         full: '9999px',
       },
-      zIndex: {
-        '0': 0,
-       '10': 10,
-      '20': 20,
-       '30': 30,
-    '40': 40,
-       '50': 50,
-       '0.1':'-10',
-       '0.2':'-20',
 
-    },
     opacity: {
       '0': '0',
       '10':'.10',

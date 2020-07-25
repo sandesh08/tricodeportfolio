@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"postcss css/tailwind.css -o public/build/tailwind.css"
+    "build": "postcss css/tailwind.css -o public/build/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.5",
     "postcss-cli": "^7.1.1",
     "tailwindcss": "^1.5.1"
