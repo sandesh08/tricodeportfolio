@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content ="ie=edge">
+    <title>Tricode Technology</title>
+ 
+     <link rel="stylesheet" href="build/style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<style>
+
+
+#logo{
+    animation:scale 1.5s infinite ease forwards 1.3s;
+}
+
+
+
+#splash-screen{
+  position: fixed;
+  top:0;
+  left: 0;
+  height:100vh;
+  width:100%;
+  background-color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  flex-direction: column;
+}
+
+
+#logo path:nth-child(1){
+stroke-dasharray: 337;
+    stroke-dashoffset: 337;
+    animation: line-anim 0.8s linear forwards,fill-black 0.2s ease-in forwards 1.0s;
+    
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 336;
+    stroke-dashoffset: 336;
+    animation: line-anim 0.8s linear forwards  , fill-brown 0.2s ease forwards 1.2s;
+ 
+
+   
+}
+
+
+@keyframes rotateBox {
+  0% {
+    transform: translate(0px,0px) rotate(0deg);
+  }
+  20% {
+    transform: translate(73px,-1px) rotate(36deg);
+  }
+  40% {
+    transform: translate(141px,72px) rotate(72deg);
+  }
+  60% {
+    transform: translate(83px,122px) rotate(108deg);
+  }
+  80% {
+    transform: translate(-40px,72px) rotate(144deg);
+  }
+  100% {
+    transform: translate(0px,0px) rotate(0deg);
+  }
+
+}
+
+
+
+@keyframes scale {
+  0% {
+    transform: scale(1.05);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  10% {
+    transform: scale(1.05);
+  }
+  15% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+
+
+@keyframes line-anim{
+    to{ stroke-dashoffset: 0;}
+}
+
+@keyframes fill-brown{
+    from
+    {
+        fill:transparent;
+    }
+    to{
+        fill:#96786E;
+    }
+}
+@keyframes rotate3d{
+    0%
+    {
+        transform: rotateY(0deg);
+    }
+    100%{
+      transform: rotateY(360deg);
+    }
+}
+@keyframes rotateme{
+    0%
+    {
+        transform: rotateZ(0deg);
+    }
+    100%{
+      transform: rotateZ(360deg);
+    }
+}
+@keyframes fill-black{
+    from{
+        fill:transparent;
+    }
+    to{
+        fill:#42474f;
+    }
+}
+
+#text{
+    position: relative;
+    opacity:0;
+    animation:text 2s ease forwards 1.2s;
+}
+
+@keyframes text{
+    from{
+        left:-40px;
+        opacity:0;
+    }
+    to {
+       left:0px;
+        opacity:1;
+    }
+}
+
+
+@keyframes translateUp{
+    from{
+        transform:translateY(20px);
+        opacity:0.5;
+    }
+    to {
+       transform:translateY(0px) ;
+        opacity:1;
+    }
+}
+
+
+
+</style>
+
+</head>
+<body class=" font-Poppins">
+    
+
+
+ </script>
+ 
+
+
+
+
+
+
+<div class="transition duration-100" id="splash-screen" >
+        <svg id="logo"  width="173" height="127" viewBox="0 0 173 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M138.52 110.79C169.439 130.348 73.1574 7.0541 59.1894 3.10216L32.0869 63C79.8237 76.6831 107.601 91.2315 138.52 110.79Z" fill="url(#paint0_radial)" stroke="#42474f" stroke-width="3"/>
+            <path d="M139.3 124.06C174.382 126.574 41.6164 64.9347 28 68.1193L3 124.06C49.616 113.332 104.218 121.546 139.3 124.06Z" fill="url(#paint1_linear)" stroke="#96786E" stroke-width="3"/>
+           
+            </svg>
+
+            <h3 id="text" class=" mt-8 relative z-50  text-gray-800 font-semibold text-lg md:text-3xl">Tricode technology pvt.ltd</h3>
+            
+</div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class=" sticky top-0 z-10 bg-primary px-4 ">
+      <div
+        class="lg:max-w-6xl lg:mx-auto lg:flex lg:items-center lg:justify-between"
+      >
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+              
+                <img  class=" mx-auto h-12 w-18 xl:h-18 xl:w-12"src="img/round.png" alt="tricode Technology" />
+
+          <a href="#" class="inline-block  ml-2 py-2 text-textPrimary lg:text-xl font-Poppins font-semibold"
+            > Tricode Technology</a
+          >
+          </div>
+          <div
+            class=" my-4 inline-block cursor-pointer lg:hidden" onclick="toggleMenu()">
+            <div id="menu-1" class="transition duration-500 ease-out bg-gray-600  h-1 w-8 rounded-lg mb-2" style=""></div>
+            <div id="menu-2" class="transition duration-500 ease-out bg-gray-600 rounded-full h-1 w-6 mb-2" "></div>
+            <div id="menu-3"class="transition duration-500 ease-out bg-gray-600 rounded-full h-1 w-4" ></div>
+          </div>
+        </div>
+        
+        <div id="menu"class=" mt-4 hidden lg:flex text-textPrimarySoft  lg:items-center lg:text-lg font-semibold ">
+            <a
+            href="#"
+            class="my-1 transition duration-100 ease-out active block py-2 px-4   hover:bg-gray-800 hover:text-gray-400 rounded-lg"
+            >Home</a
+          >
+          <a
+          href="#services"
+          class="block my-1 transition duration-100 ease-out py-2 px-4    hover:bg-gray-800 rounded-lg hover:text-gray-400"
+          >Services</a
+        >
+          <a
+          href="#"
+          class="block my-1 transition duration-100 ease-out py-2 px-4  hover:bg-gray-800 rounded-lg hover:text-gray-400"
+          >Works</a
+        >
+        <a
+          href="#about-us"
+          class="block my-1 transition duration-100 ease-out py-2 px-4   hover:bg-gray-800 rounded-lg hover:text-gray-400"
+          >About us</a
+        >
+        <a
+        href="#contact-us"
+        class="block py-2 my-1transition duration-100 ease-out  px-4   hover:bg-gray-800 rounded-lg hover:text-gray-400 "
+        >contact us</a
+      >
+        </div>
+      </div>
+    </div>
+
+    <div class=" relative md:overflow-hidden ">
+      <div class="absolute h-full w-full bg-primary z-0.2"></div>
+      
+      <div class="px-4 py-20 md:py-4">
+        <div class="md:max-w-6xl md:mx-auto">
+          <div class="md:flex md:flex-wrap">
+            <div class="md:w-1/2 text-center md:text-left md:pl-8 lg:pl-0 md:pt-16 lg:pt-24">
+              <h1
+                class="font-bold text-textPrimary  font-Poppins text-2xl md:text-3xl leading-tight mb-4" style="animation:translateUp 2s ease-in forwards;"
+              >
+             Transform your awesome ideas into beautifully crafted digital products.
+              </h1>
+
+              <p class="text-textPrimarySoft md:text-xl md:pr-12" style="animation:translateUp 2s ease-out forwards;">
+                Our dedicated developers at Tricode technology are skilled and capable enough to  engineer your ideas and concepts into real products.
+              </p>
+
+              <a
+                href="#contact-us"
+                class=" transition duration-200 ease-in mt-6 mb-12 md:mb-0 md:mt-10 inline-block py-3 px-8 text-white bg-secondary  rounded-full shadow-xl bordDFE2E6er-2 border-blue-600 hover:bg-white hover:text-gray-700 hover:leading-wide" style="animation:translateUp 2s ease-out forwards;"
+                >Contact us</a
+              >
+            </div>
+            <div class="md:w-1/2 relative">
+              <div class="hidden md:block">
+               
+
+               
+
+                <div
+                  class="ml-32 absolute left-0 bottom-0  bg-gray-300 rounded-lg shadow-2xl px-3 "
+                  style="transform: rotate(-8deg); z-index: 2; margin-bottom: -220px; animation: animateMobile 4s linear infinite "
+                >
+                <div class="h-2 rounded-lg mx-auto my-4 w-12 bg-gray-100"></div>
+                  <div class="bg-white rounded-lg pt-4  ">
+                      <div class="bg-gray-300 rounded-lg  mt-2 mx-4  h-32 w-48 ">
+                        
+                    </div>  
+                        <div class="bg-white shadow-lg rounded-lg  w-40  mx-auto -mt-12 py-3 relative">
+                            <div>
+                            <div class="h-3 rounded-sm mx-4 bg-gray-300"></div>
+                            <div class="h-2 rounded-sm mx-4 mt-3 bg-gray-200"></div>
+                            <div class="h-2 rounded-sm mx-4 mt-1 bg-gray-200"></div>
+                            <div class="h-2 rounded-sm mx-4 mt-1 bg-gray-200"></div>
+                            <div class="h-2 rounded-sm ml-4 w-12 mt-1  bg-gray-200"></div>
+                            </div>
+                          </div>
+                          
+                            <div class="h-3 rounded-sm mx-4 mt-6 bg-gray-300"></div>
+                            <div class="h-2 rounded-sm mx-6 mt-3 bg-gray-200"></div>
+                            <div class="h-2 rounded-sm mx-6 mt-1 bg-gray-200"></div>
+                            <div class="flex my-2 py-2 px-4 ">
+                                <div class="h-8 rounded-sm bg-green-200 mx-2 flex-grow"></div>
+                                <div class="h-8 rounded-sm bg-red-200 mx-2 flex-grow"></div>
+
+                            </div>
+                       
+                          
+                        
+
+                      
+                    
+
+                  </div>
+                  <div class="h-8 w-8 rounded-full bg-gray-100 my-3 mx-auto"></div>
+                  
+                    
+                  </div>
+               
+
+                <div
+                  class="mt-10 w-full absolute right-0 top-0 flex rounded-lg bg-white overflow-hidden shadow-lg"
+                  style="transform: rotate(-8deg); margin-right: -250px; z-index: 1; animation: animateWeb 6s linear infinite ;"
+                >
+                <div
+                class="h-4 bg-gray-200 absolute top-0 left-0 right-0 rounded-t-lg flex items-center"
+              >
+                <span
+                  class="h-2 w-2 rounded-full bg-red-500 inline-block mr-1 ml-2"
+                ></span>
+                <span
+                  class="h-2 w-2 rounded-full bg-orange-400 inline-block mr-1"
+                ></span>
+                <span
+                  class="h-2 w-2 rounded-full bg-green-500 inline-block mr-1"
+                ></span>
+              </div>
+                  <div class="w-32 bg-gray-200" style="height: 560px;"></div>
+                  <div class="flex-1 p-6">
+                    <div class="h-3 w-64 bg-gray-300 rounded-md  mb-3"></div>
+                    <div class="flex mb-5">
+                      <div class="w-16 rounded-full bg-gray-100 py-2 px-4 mr-2">
+                        <div class="p-1 rounded-full bg-gray-300"></div>
+                      </div>
+                      <div class="w-16 rounded-full bg-gray-100 py-2 px-4 mr-2">
+                        <div class="p-1 rounded-full bg-gray-300"></div>
+                      </div>
+                      <div class="w-16 rounded-full bg-gray-100 py-2 px-4 mr-2">
+                        <div class="p-1 rounded-full bg-gray-300"></div>
+                      </div>
+                      <div class="w-16 rounded-full bg-gray-100 py-2 px-4">
+                        <div class="p-1 rounded-full bg-gray-300"></div>
+                      </div>
+                    </div>
+
+                    <div class="flex flex-wrap -mx-4 mb-5">
+                      <div class="w-1/3 px-4">
+                        <div class="h-40 rounded-lg bg-white shadow-lg p-6">
+                          <div
+                            class="w-16 h-16 rounded-full bg-gray-200 mb-6"
+                          ></div>
+                          <div
+                            class="h-2 w-16 bg-gray-200 mb-2 rounded-full"
+                          ></div>
+                          <div class="h-2 w-10 bg-gray-200 rounded-full"></div>
+                        </div>
+                      </div>
+                      <div class="w-1/3 px-4">
+                        <div class="h-40 rounded-lg bg-white shadow-lg p-6">
+                          <div
+                            class="w-16 h-16 rounded-full bg-gray-200 mb-6"
+                          ></div>
+                          <div
+                            class="h-2 w-16 bg-gray-200 mb-2 rounded-full"
+                          ></div>
+                          <div class="h-2 w-10 bg-gray-200 rounded-full"></div>
+                        </div>
+                      </div>
+                      <div class="w-1/3 px-4">
+                        <div class="h-40 rounded-lg bg-white shadow-lg p-6">
+                          <div
+                            class="w-16 h-16 rounded-full bg-gray-200 mb-6"
+                          ></div>
+                          <div
+                            class="h-2 w-16 bg-gray-200 mb-2 rounded-full"
+                          ></div>
+                          <div class="h-2 w-10 bg-gray-200 rounded-full"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="h-3 w-64 bg-gray-300 rounded-md  mb-3">
+                      
+                    </div>
+
+                    <div
+                      class="w-full flex flex-wrap justify-between items-center border-b-2 border-gray-100 py-3"
+                    >
+                      <div class="w-1/3">
+                        <div class="flex">
+                          <div class="h-8 w-8 rounded bg-gray-200 mr-4"></div>
+                          <div>
+                            <div
+                              class="h-2 w-16 bg-gray-200 mb-1 rounded-full"
+                            ></div>
+                            <div
+                              class="h-2 w-10 bg-gray-100 rounded-full"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-1/3">
+                        <div
+                          class="w-16 rounded-full bg-green-100 py-2 px-4 mx-auto"
+                        >
+                          <div class="p-1 rounded-full bg-green-200"></div>
+                        </div>
+                      </div>
+                      <div class="w-1/3">
+                        <div
+                          class="h-2 w-10 bg-gray-100 rounded-full mx-auto"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex flex-wrap justify-between items-center border-b-2 border-gray-100 py-3"
+                    >
+                      <div class="w-1/3">
+                        <div class="flex">
+                          <div class="h-8 w-8 rounded bg-gray-200 mr-4"></div>
+                          <div>
+                            <div
+                              class="h-2 w-16 bg-gray-200 mb-1 rounded-full"
+                            ></div>
+                            <div
+                              class="h-2 w-10 bg-gray-100 rounded-full"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-1/3">
+                        <div
+                          class="w-16 rounded-full bg-orange-100 py-2 px-4 mx-auto"
+                        >
+                          <div class="p-1 rounded-full bg-orange-200"></div>
+                        </div>
+                      </div>
+                      <div class="w-1/3">
+                        <div
+                          class="h-2 w-16 bg-gray-100 rounded-full mx-auto"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex flex-wrap justify-between items-center border-b-2 border-gray-100 py-3"
+                    >
+                      <div class="w-1/3">
+                        <div class="flex">
+                          <div class="h-8 w-8 rounded bg-gray-200 mr-4"></div>
+                          <div>
+                            <div
+                              class="h-2 w-16 bg-gray-200 mb-1 rounded-full"
+                            ></div>
+                            <div
+                              class="h-2 w-10 bg-gray-100 rounded-full"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-1/3">
+                        <div
+                          class="w-16 rounded-full bg-blue-100 py-2 px-4 mx-auto"
+                        >
+                          <div class="p-1 rounded-full bg-blue-200"></div>
+                        </div>
+                      </div>
+                      <div class="w-1/3">
+                        <div
+                          class="h-2 w-8 bg-gray-100 rounded-full mx-auto"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="w-full absolute left-0 bottom-0 ml-1"
+                  style="transform: rotate(-8deg); z-index: 1; margin-bottom: -360px;"
+                >
+                  <div class="grid--gray h-48 w-48"></div>
+                </div>
+              </div>
+
+              <div
+                class="md:hidden w-full absolute right-0 top-0 flex rounded-lg bg-white overflow-hidden shadow"
+              >
+                <div
+                  class="h-4 bg-gray-200 absolute top-0 left-0 right-0 rounded-t-lg flex items-center"
+                >
+                  <span
+                    class="h-2 w-2 rounded-full bg-red-500 inline-block mr-1 ml-2"
+                  ></span>
+                  <span
+                    class="h-2 w-2 rounded-full bg-orange-400 inline-block mr-1"
+                  ></span>
+                  <span
+                    class="h-2 w-2 rounded-full bg-green-500 inline-block mr-1"
+                  ></span>
+                </div>
+                <div class="w-32 bg-gray-100 px-2 py-8" style="height: 340px;">
+                  <div class="h-2 w-16 bg-gray-300 rounded-full mb-4"></div>
+                  <div class="flex items-center mb-4">
+                    <div
+                      class="h-5 w-5 rounded-full bg-gray-300 mr-3 flex-shrink-0"
+                    ></div>
+                    <div>
+                      <div class="h-2 w-10 bg-gray-300 rounded-full"></div>
+                    </div>
+                  </div>
+
+                  <div class="h-2 w-16 bg-gray-200 rounded-full mb-2"></div>
+                  <div class="h-2 w-10 bg-gray-200 rounded-full mb-2"></div>
+                  <div class="h-2 w-20 bg-gray-200 rounded-full mb-2"></div>
+                  <div class="h-2 w-6 bg-gray-200 rounded-full mb-2"></div>
+                  <div class="h-2 w-16 bg-gray-200 rounded-full mb-2"></div>
+                  <div class="h-2 w-10 bg-gray-200 rounded-full mb-2"></div>
+                  <div class="h-2 w-20 bg-gray-200 rounded-full mb-2"></div>
+                  <div class="h-2 w-6 bg-gray-200 rounded-full mb-2"></div>
+                </div>
+                <div class="flex-1 px-4 py-8">
+                    <div class="h-2 w-32 bg-gray-300 my-2 rounded-lg"></div>
+                  <div class="flex mb-5">
+                    <div class="p-2 w-12 rounded-full bg-gray-100 mr-2"></div>
+                    <div class="p-2 w-12 rounded-full bg-gray-100 mr-2"></div>
+                    <div class="p-2 w-12 rounded-full bg-gray-100 mr-2"></div>
+                    <div class="p-2 w-12 rounded-full bg-gray-100 mr-2"></div>
+                  </div>
+
+                  <div class="flex flex-wrap -mx-2 mb-5">
+                    <div class="w-1/3 px-2">
+                      <div class="p-3 rounded-lg bg-white shadow">
+                        <div
+                          class="w-6 h-6 rounded-full bg-gray-200 mb-2"
+                        ></div>
+                        <div
+                          class="h-2 w-10 bg-gray-200 mb-1 rounded-full"
+                        ></div>
+                        <div class="h-2 w-6 bg-gray-200 rounded-full"></div>
+                      </div>
+                    </div>
+                    <div class="w-1/3 px-2">
+                      <div class="p-3 rounded-lg bg-white shadow">
+                        <div
+                          class="w-6 h-6 rounded-full bg-gray-200 mb-2"
+                        ></div>
+                        <div
+                          class="h-2 w-10 bg-gray-200 mb-1 rounded-full"
+                        ></div>
+                        <div class="h-2 w-6 bg-gray-200 rounded-full"></div>
+                      </div>
+                    </div>
+                    <div class="w-1/3 px-2">
+                      <div class="p-3 rounded-lg bg-white shadow">
+                        <div
+                          class="w-6 h-6 rounded-full bg-gray-200 mb-2"
+                        ></div>
+                        <div
+                          class="h-2 w-10 bg-gray-200 mb-1 rounded-full"
+                        ></div>
+                        <div class="h-2 w-6 bg-gray-200 rounded-full"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                 
+                   
+                  <div class="h-2 w-32 bg-gray-300 my-2 rounded-lg"></div>
+
+                  <div
+                    class="w-full flex flex-wrap justify-between items-center border-b-2 border-gray-100 py-3"
+                  >
+                    <div class="w-1/3">
+                      <div class="flex">
+                        <div
+                          class="h-5 w-5 rounded-full bg-gray-200 mr-3 flex-shrink-0"
+                        ></div>
+                        <div>
+                          <div
+                            class="h-2 w-16 bg-gray-200 mb-1 rounded-full"
+                          ></div>
+                          <div class="h-2 w-10 bg-gray-100 rounded-full"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-1/3">
+                      <div
+                        class="w-16 rounded-full bg-green-100 py-2 px-4 mx-auto"
+                      >
+                        <div class="p-1 rounded-full bg-green-200"></div>
+                      </div>
+                    </div>
+                    <div class="w-1/3">
+                      <div
+                        class="h-2 w-10 bg-gray-100 rounded-full mx-auto"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-wrap justify-between items-center py-3">
+                    <div class="w-1/3">
+                      <div class="flex">
+                        <div
+                          class="h-5 w-5 rounded-full bg-gray-200 mr-3 flex-shrink-0"
+                        ></div>
+                        <div>
+                          <div
+                            class="h-2 w-16 bg-gray-200 mb-1 rounded-full"
+                          ></div>
+                          <div class="h-2 w-10 bg-gray-100 rounded-full"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-1/3">
+                      <div
+                        class="w-16 rounded-full bg-orange-100 py-2 px-4 mx-auto"
+                      >
+                        <div class="p-1 rounded-full bg-orange-200"></div>
+                      </div>
+                    </div>
+                    <div class="w-1/3">
+                      <div
+                        class="h-2 w-16 bg-gray-100 rounded-full mx-auto"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg
+        class="fill-current text-white hidden md:block  relative"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path fill-opacity="1" d="M0,224L1440,32L1440,320L0,320Z"></path>
+      </svg>
+
+        <img class="hidden h-64 w-64 md:block absolute opacity-75 z-0.1 " style="top:20%; left:30px; animation:rotate3d 4s linear infinite;" src="img/shape1.png" alt="image">
+
+ 
+        <img class="h-8 w-8 absolute opacity-50 z-0.1 " style="top:10%; right:20px; animation:rotateme 20s linear infinite;" src="img/menu-close.svg" alt="image">
+        <img class="h-8 w-8 absolute  z-0.1" style="top:15%; left:25%; animation:rotateBox 20s linear infinite;" src="img/arrow-blue.svg" alt="image">
+  
+    </div>
+
+
+</div>
+
+    
+    <div class="flex  flex-col items-end mt- md:mt-18 w-full">
+     
+      <div class="hidden md:block" style="width:75vw;" >
+        <div class="" style=" border-bottom: 50px solid #88BDBC; border-left: 75vw; border-left-color:transparent; border-left-style:solid;"></div>
+      <h1 class=" bg-primary font-semibold  font-Poppins text-lg md:text-3xl py-12 text-textPrimary text-center"> " Bring <span class="text-orange-500">Happiness</span> to Your <br>Digital Products!"</h1>
+      <div class="" style=" border-top: 50px solid #88BDBC; border-right: 75vw; border-right-color:transparent; border-right-style:solid;"></div>
+    </div>    
+    </div>
+    <h1 class="md:hidden  font-semibold  font-Poppins text-lg  mt-4 pt-16 text-gray-700 text-center"> " Bring <span class="text-orange-500">Happiness</span> to Your <br>Digital Products!"</h1>
+
+
+
+
+
+<section class=" py-4 mx-auto md:mt-2 max-w-screen-xl">
+    <h1 class="text-lg md:text-3xl font-semibold pt-16 font-Poppins  text-gray-700 text-center">Why Choose Tricode</h1>
+    <div class="mx-auto  border-4 border-blue-600 w-16 rounded-full mb-8"></div>
+    
+    <div class="mx-auto md:flex md:flex-wrap overflow-hidden" >
+     <div class="md:w-1/2 px-6 mt-8" data-aos="slide-right">
+       <h1 class="text-textPrimary text-lg font-semibold">
+        Free quotes & consultation
+       </h1>
+       <p class="text-textPrimarySoft mt-2">
+        We come for free quotes and there is no cost for the initial meetings where we grab your basic needs and expectations. We believe a job rushed is a job not worth doing so planning is a central priority for our business model 
+
+       </p>
+     </div>
+     <div class="mt-8 md:w-1/2 px-6" data-aos="slide-left">
+       <h1 class="text-textPrimary text-lg font-semibold">
+        we’ll understand your brand
+
+       </h1>
+       
+       <p class="text-textPrimarySoft mt-2">
+
+Before we even start writing, we think about your tone of voice and value proposition, so every word builds your brand.
+       </p>
+     </div>
+     <div class="mt-8 md:w-1/2 px-6" data-aos="slide-right">
+       <h1 class="text-textPrimary text-lg font-semibold">
+        We guarantee our work
+       </h1>
+     
+       <p class="text-textPrimarySoft mt-2">
+        Jobs not complete until you are satisfied, we guarantee you’ll be happy with our work. We Listen, Suggest & Update
+        We have a proven methodology
+       </p>
+     </div>
+     <div class="mt-8 md:w-1/2 px-6" data-aos="slide-left">
+       <h1 class="text-textPrimary text-lg font-semibold">Quality meet affordability</h1>
+ 
+       <p class="text-textPrimarySoft mt-2">
+        It is our utmost priority to help your business reduce expenses by providing Quality products at affordable costs. We guarantee your products are on time and perfectly fit the needs and behavior of your users. 
+       </p>
+     </div>
+     <div class="mt-8 md:w-1/2 px-6" data-aos="slide-right">
+       <h1 class="text-textPrimary text-lg font-semibold">Close Collaboration with Clients</h1>
+   
+       <p class="text-textPrimarySoft mt-2">
+        At Tricode, we value the relationship we have with our clients. We are always willing to listen to your suggestions and adapt to your specific needs. With regular meetings and updates, we make sure you are always a part of the team.
+       </p>
+     </div>
+     <div class="mt-8 md:w-1/2 px-6" data-aos="slide-left">
+       <h1 class="text-textPrimary text-lg font-semibold">
+        Dedicated Workforce
+       </h1>
+     
+       <p class="text-textPrimarySoft mt-2">
+        Tricode Technology is composed of talented Designers & Expert Developers. We work with a proven methodology and constantly focus on innovating and improving ourselves. 
+       </p>
+     </div>
+
+    </div>
+</section>
+
+<div class=" border-left-div mt-8"></div>
+<section id="services" class="bg-primary py-8 overflow-hidden">
+    <h1 class="text-lg md:text-2xl font-semibold  font-Poppins  text-textPrimary text-center">Services</h1>
+    <div class="mx-auto  border-4 border-secondary w-16 rounded-full"></div>
+        <h1 class="text-lg md:text-xl font-semibold pt-16 font-Poppins  text-textPrimarySoft text-center">We Specialize in</h1>
+        
+ <div class="lg:hidden">
+    <div class=" bg-white  rounded-lg my-8 mx-6   shadow-lg  relative  " data-aos="slide-up">
+          <div class="flex justify-between items-cente mx-4 items-center">
+        <div class="flex   items-center  my-2">
+        <img  class="h-12 w-12  mx-auto"src="img/android.svg" alt="tricode Technology" />
+        
+        <h1 class=" text-sm md:text-md  ml-2 font-semibold  text-gray-700 ">Mobile  Development </h1>
+        </div>
+        <img  id="mobile-toggler" class="h-6 w-6 transform rotate-180  transition duration-500 ease-out flex-shrink-1"src="img/arrow-blue.svg" alt="arrow" onclick="toggleText('mobile-text','mobile-toggler')" />
+          </div>
+        <p id="mobile-text"class=" hidden  text-sm md:text-md text-gray-600  text-medium text-center px-6 py-4">
+            Tricode technology is the top of mobile development outsourcing in nepal, with rich experience in providing offshore software development services, we have developed a wide range of consumer and enterprise-oriented applications.
+        </p>
+    </div>
+
+    <div class=" bg-white rounded-lg my-8 mx-6   shadow-lg "  data-aos="slide-up">
+          <div class="flex justify-between items-cente mx-4 items-center">
+        <div class="flex   items-center  my-2">
+        <img  class="h-12 w-12  mx-auto"src="img/we.svg" alt="tricode Technology" />
+        
+        <h1 class="text-sm md:text-md  ml-2 font-semibold font-Poppins  text-gray-700 ">Web  Development </h1>
+        </div>
+        <img  id="web-toggler" class="h-6 w-6 transform rotate-180  transition duration-500 ease-out flex-shrink-1"src="img/arrow-blue.svg" alt="arrow" onclick="toggleText('web-text','web-toggler')" />
+          </div>
+        <p id="web-text"class=" hidden transition duration-500 ease-out text-sm md:text-md text-gray-600  text-semibold text-center px-6 py-4">
+            Along with website development services for different sectors, we offer high-end consulting services, including expert guidance and project management related to website design and web app development.
+        </p>
+    </div>
+
+
+    <div class=" bg-white rounded-lg my-8 mx-6   shadow-lg " data-aos="slide-up">
+          <div class="flex justify-between  mx-4 items-center">
+        <div class="flex   items-center  my-2">
+        <img  class="h-12 w-12  mx-auto"src="img/marketing.svg" alt="tricode Technology" />
+        
+        <h1 class="text-sm md:text-md  ml-2 font-semibold font-Poppins  text-gray-700 ">digital marketing & seo </h1>
+        </div>
+        <img  id="seo-toggler" class="h-6 w-6 transform rotate-180  transition duration-500 ease-out flex-shrink-1"src="img/arrow-blue.svg" alt="arrow-blue" onclick="toggleText('seo-text','seo-toggler')" />
+          </div>
+        <p id="seo-text"class=" hidden transition duration-500 ease-out text-sm md:text-md text-gray-600  text-medium text-center px-6 py-4">
+            We not only build your products, but we also make sure that your products get the attention of your potential customers.
+            Through digital marketing and search engine optimizations, we make sure your products get the attention of your potential customers
+        </p>
+    </div>
+</div>
+        <div class=" hidden lg:flex lg:justify-around lg:flex-wrap xl:max-w-screen-xl mx-auto mt-12">
+<div class="  lg:w-1/3 wow bounceInUp">
+    <div class="wow slideInLeft bg-white rounded-xl  mx-6 px-8  relative sm:h-full sm:mx-8 md:mx-4 py-8 transition duration-300 transform hover:scale-110 hover:shadow-2xl" data-aos="slide-right">
+        
+        <img  class="h-16 w-16  "src="img/android.svg" alt="tricode Technology" />
+        <h1 class="text-lg mt-8 font-semibold font-Poppins  text-gray-700 text-left"> Web Development </h1>
+        <p class="text-sm   text-light text-gray-600 text-left  mt-2">
+            Tricode technology is the top of mobile development outsourcing in nepal, with rich experience in providing offshore software development services, we have developed a wide range of consumer and enterprise-oriented applications.
+        </p>
+    </div>
+</div>
+
+
+<div class="lg:w-1/3 overflow-hidden">
+    <div class="bg-white rounded-xl  mx-6 px-8 py-8   relative  sm:mx-8 md:mx-4 sm:h-full transition duration-300 transform hover:scale-110 hover:shadow-2xl" data-aos="zoom-in">
+       
+        <img  class="h-16 w-16 "src="img/we.svg" alt="tricode Technology" />
+        <h1 class="text-lg mt-8 font-semibold font-Poppins  text-gray-700 text-left">Web development </h1>
+        <p class="text-sm text-gray-600  text-light text-left  tracking-wide mt-2">
+            Along with website development services for different sectors, we offer high-end consulting services, including expert guidance and project management related to website design and web app development.
+        </p>
+    </div>
+    </div>
+
+
+<div class="lg:w-1/3">
+    <div class="wow slideInLeft bg-white rounded-xl  mx-6 px-8 py-8   relative  sm:mx-8 md:mx-4 transition duration-300 transform hover:scale-110 hover:shadow-2xl" data-aos="slide-left">
+       
+        <img  class="h-16 w-16 "src="img/marketing.svg" alt="tricode Technology" />
+        <h1 class="text-lg mt-8 font-semibold font-Poppins  text-gray-700 text-left">Digital Marketing & SEO </h1>
+        <p class="text-sm text-gray-600  text-light text-left  mt-2">
+            We not only build your products, but we also make sure that your products get the attention of your potential customers.
+Through digital marketing and search engine optimizations, we make sure your products get the attention of your potential customers
+        </p>
+    </div>
+    </div>
+        </div>
+
+       </div>
+
+
+
+       <div class="  w-full px-8 bg-gray-200 my-8 md:my-16 py-8 flex flex-col items-center" style="background-color: #a1caca;">
+         <h1 class="block text-center font-semibold text-textPrimary   font-Poppins text-md md:text-2xl leading-tight mb-4 ">
+          "We are Dedicated to Our Client’s Success"
+         </h1>
+         <h1 class="text-center font-semibold text-textPrimary  font-Poppins text-md md:text-2xl leading-tight mb-8">"We understand business"</h1>
+         <a  class=" transition duration-200 linear mx-auto bg-secondary px-8 py-2 rounded-full border-2 border-secondary text-white md:text-lg hover:bg-white hover:text-primary" href="#contact-us">Get quote</a> 
+       </div>
+
+</section>
+<div class=" border-right-div "></div>
+<section id="about-us"class="px-4  xl:max-w-screen-xl xl:mx-auto overflow-hidden">
+   
+    <h1 class="text-lg md:text-3xl font-semibold pt-16 font-Poppins  text-gray-700 text-center">About us</h1>
+    <div class="mx-auto  border-4 border-blue-600 w-16 rounded-full"></div>
+
+    <div class="sm:flex sm:items-center">
+    <img  class="mx-auto max-w-md w-full object-fit object-center mt-3 sm:w-1/2" data-aos="slide-right" src="img/about.svg" alt="team" />
+    <p class="text-sm md:text-md lg:text-lg  ml-4 text-gray-600  text-medium text-left mt-3 sm:w-1/2" data-aos="slide-left">
+        &nbsp; &nbsp; &nbsp; &nbsp; Tricode is a Web Designing Company Born in Kathmandu that provides services related to Website designing, Website Redesigning, Responsive Website, Mobile application development ,digital marketing ans search engine optimization.<br><br>
+
+        &nbsp; &nbsp; &nbsp; &nbsp; We can transform your businesses by our strong technical ability with our deep understanding of the digital landscape.<br><br>
+        
+        &nbsp;  &nbsp; &nbsp; &nbsp;We have a results-oriented team, working with the right technology for the right job, ensuring total quality with precision and high-value returns. Our Research and Development continually explore new technologies to offer our customers the best, generating a high level of satisfaction in them.
+        
+    </p>
+    </div>
+
+</section>
+<div class=" border-left-div mt-8 "></div>
+<section id="contact-us"class="bg-primary  py-16" >
+    <h1 class="text-lg md:text-3xl font-semibold pt-16 font-Poppins  text-textPrimary text-center">Contact us</h1>
+    <div class="mx-auto  border-4 border-secondary w-16 rounded-full"></div>
+    <div class="bg-white shadow-xl mx-6 my-8  py-8 px-6 rounded-2xl  xl:max-w-screen-xl xl:mx-auto">
+       <div class="sm:flex sm:items-center sm:justify-between ">
+          <div class="sm:w-1/2 sm:px-8">
+           <h1 class="text-lg md:text-3xl font-semibold mt-4 font-Poppins  text-gray-700 ">Got a Project?</h1>
+           <h1 class="text-md md:text-xl font-semibold  font-Poppins  text-gray-700 ">Let's have a chat</h1>
+           <Form >
+
+            <div >
+              <label class="block  tracking-wide text-gray-600 text-sm font-medium mt-8" for="name">
+                Name
+              </label>
+              <input class="appearance-none block w-full bg-gray-200 mt-2 text-gray-700 border border-gray-200 rounded-full py-3 px-4 mb-1 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="Name">
+             
+            </div>
+              
+           <div class="mt-4">
+            <label class="text-sm font-medium text-gray-600"for="inputEmail">Email</label>
+            <input class="appearance-none block w-full bg-gray-200 mt-2 text-gray-700 border border-gray-200 rounded-full py-3 px-4 mb-1 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="Email">
+               
+          </div>
+            <div class="mt-4">
+                <label class="text-sm font-medium text-gray-600"for="inputEmail">short message</label>
+                <textarea class="appearance-none block w-full bg-gray-200 mt-2 text-gray-700 border border-gray-200 rounded-xl py-3 px-4 mb-1 leading-tight focus:outline-none resize-none focus:bg-white focus:border-gray-500" id="name" type="text"  rows="6" placeholder="message" ></textarea>
+  
+                <button class=" mt-6 mb-12 md:mb-0 md:mt-10 inline-block py-3 px-8 text-white bg-blue-600  rounded-full shadow-xl border-2 border-blue-600 hover:bg-white hover:text-gray-700" type="submit" value="submit">  Get in touch </button>
+                </Form>
+          </div>
+
+               
+    
+           
+       </div>
+           <div class=" w-full sm:w-1/2 sm:flex sm:flex-col sm:justify-center sm:items-center">
+
+<img class="hidden sm:block object-cover mx-auto" style="max-height: 25rem;" src="img/contact.png" />
+<div class=" sm:ml-4">
+<div class="flex justify-start items-center  mt-2"> <svg class="h-4 w-4 fill-current text-gray-600 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13zm0-11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg><span class="text-sm md:text-md text-gray-600">Sanepa, Lalitpur</span></div>
+<div class="flex justify-start items-center mt-2"> <svg class="h-4 w-4 fill-current text-gray-600 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M20 18.35V19a1 1 0 0 1-1 1h-2A17 17 0 0 1 0 3V1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4c0 .56-.31 1.31-.7 1.7L3.16 8.84c1.52 3.6 4.4 6.48 8 8l2.12-2.12c.4-.4 1.15-.71 1.7-.71H19a1 1 0 0 1 .99 1v3.35z"/></svg><span class="text-sm md:text-md text-gray-600">+977-9845454545</span></div>
+           
+              <div class="flex justify-start items-center   mt-2"><svg class="h-4 w-4 fill-current text-gray-600 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M18 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4c0-1.1.9-2 2-2h16zm-4.37 9.1L20 16v-2l-5.12-3.9L20 6V4l-10 8L0 4v2l5.12 4.1L0 14v2l6.37-4.9L10 14l3.63-2.9z"/></svg> <span class="text-sm md:text-md text-gray-600">tricodeofficial@gmail.com</span></div>
+                
+              </div>
+           </div> 
+        </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var loaded=false;
+    window.onload=function(){
+       if(loaded){
+        document.getElementById("splash-screen").style.opacity="0";
+          document.getElementById("splash-screen").style.display="none";
+          }
+       else{
+         loaded=true;
+       }
+
+      };
+
+      setTimeout(function (){
+        if(loaded){document.getElementById("splash-screen").style.opacity="0";
+        document.getElementById("splash-screen").style.display="none";
+      }
+        else{
+          loaded=true;
+        }
+      },3000);
+
+
+    document.addEventListener("click",function(e){
+      console.log(e.target);
+      if(e.target.localName=="a"){
+      var a= document.querySelectorAll("#menu a");
+      for(var i=0; i<a.length; i++ )
+      {
+        if(a[i].classList.contains("active"))
+        {
+          a[i].classList.remove("active");
+        }
+
+      }
+      e.target.classList.add("active");
+      console.log(a);
+    }
+
+    });
+    document.addEventListener("scroll",function(e)
+    {
+      console.log(e);
+      var contact=document.getElementById("contact-us");
+      console.log(contact.offsetParent);
+
+    })
+
+    menuVisible=false;
+    mobile=false; 
+    function toggleMenu()
+    {
+        console.log("clicked");
+        if(!menuVisible)
+        {
+            document.getElementById("menu-3").style.width="2rem";
+            document.getElementById("menu-1").style.transform="translateY(50%) rotate(135deg)";
+            document.getElementById("menu-3").style.transform="translateY(-100%) rotate(45deg)";
+            document.getElementById("menu-3").style.margin="0";
+  
+            document.getElementById("menu-1").style.margin="0";
+            document.getElementById("menu-2").style.opacity="0";
+            document.getElementById("menu-2").style.margin="0";
+            document.getElementById("menu").classList.remove("hidden");
+            menuVisible=true;
+
+        }
+        else{
+            document.getElementById("menu-1").style.transform="rotate(0deg)";
+            document.getElementById("menu-3").style.transform="rotate(0deg)";
+            document.getElementById("menu-2").style.opacity="1";
+            document.getElementById("menu-1").style.marginBottom="0.5rem";
+            document.getElementById("menu-2").style.marginBottom="0.5rem";
+            document.getElementById("menu-3").style.width="1rem";
+            document.getElementById("menu").classList.add("hidden");
+            menuVisible=false;
+        }
+
+    }
+    function toggleText(text,context)
+    {
+        console.log(text,context);
+        classlist=document.getElementById(text).classList;
+
+        if(classlist.value.includes("hidden"))
+        {
+            document.getElementById(text).classList.remove("hidden");
+            document.getElementById(context).style.transform="rotate(0deg)";
+            
+
+        }
+        else{
+            document.getElementById(text).classList.add("hidden");
+            document.getElementById(context).style.transform="rotate(180deg)";
+
+        }
+
+    }
+
+
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  
+  AOS.init({
+  duration: 500,
+})
+</script>
+</body>
+</html>
